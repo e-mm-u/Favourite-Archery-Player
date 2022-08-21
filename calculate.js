@@ -11,13 +11,17 @@ function changeInnertext(id,replacewith){
     document.getElementById(id).innerText = replacewith;
 }
 
+function coundChild(id){
+    return document.getElementById(id).children.length;
+}
+
 document.getElementById('calculate').addEventListener('click',function(){
 
     const perPersonCost = value('perPlayerCost');
 
     // clearField('perPlayerCost');
-
-    const totalPerPlayerCost = 5 * perPersonCost;
+    const n = coundChild('top-five');
+    const totalPerPlayerCost = n * perPersonCost;
     changeInnertext('playerExpensetotal',totalPerPlayerCost);
     
     // document.getElementById('playerExpensetotal').innerText = totalPerPlayerCost;
@@ -25,19 +29,20 @@ document.getElementById('calculate').addEventListener('click',function(){
 
 document.getElementById('calculate-total').addEventListener('click', function(){
     // const totalPerPlayerCost = parseFloat(document.getElementById('playerExpensetotal').innerText);
-    const totalPerPersonCost = 5 * value('perPlayerCost');
+    const perPersonCost = value('perPlayerCost');
+    const n = coundChild('top-five');
+    const totalPerPlayerCost = n * perPersonCost;
 
     const managerCost = value('manager');
-
     const coachCost = value('coach');
 
 
-    const finalCost = totalPerPersonCost + managerCost + coachCost;
+    const finalCost = totalPerPlayerCost + managerCost + coachCost;
 
     changeInnertext('final-cost',finalCost);
 
-    clearField('perPlayerCost');
-    clearField('manager');
-    clearField('coach');
+    // clearField('perPlayerCost');
+    // clearField('manager');
+    // clearField('coach');
 
 })
