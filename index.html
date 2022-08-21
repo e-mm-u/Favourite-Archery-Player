@@ -222,7 +222,7 @@
 
             <section class="w-25">
                 <div class="aside">
-                    <div class="selected-players mb-3 p-3 text-light">
+                    <div class="selected-players mb-3 p-3 rounded text-light">
                         <div class=" ">
                             <h5 class="text-light">Selected players</h5>
                         </div>
@@ -237,7 +237,7 @@
                         </div>
                     </div>
 
-                    <div class="budget p-3">
+                    <div class="budget mb-3 p-3 rounded text-light">
                         <div>
                             <h5>Budget</h5>
                         </div>
@@ -247,17 +247,17 @@
                                 <p>Per player</p>
                             </div>
                             <div>
-                                <input class="w-50" type="text" name="" id="">
+                                <input class="w-50" type="text" name="" id="perPlayerCost">
                             </div>
                         </div>
 
                         <div>
-                            <button>Calculate</button>
+                            <button id="calculate">Calculate</button>
                         </div>
 
                         <div class="player-expense d-flex">
                             <div>Player Expense</div>
-                            <div>Total</div>
+                            <div id="playerExpensetotal"></div>
                         </div>
 
                         <div class="d-flex">
@@ -265,7 +265,7 @@
                                 <p>Manager</p>
                             </div>
                             <div>
-                                <input class="w-50" type="text" name="" id="">
+                                <input class="w-50" type="text" name="" id="manager">
                             </div>
                         </div>
 
@@ -274,12 +274,12 @@
                                 <p>Coach</p>
                             </div>
                             <div>
-                                <input class="w-50" type="text" name="" id="">
+                                <input class="w-50" type="text" name="" id="coach">
                             </div>
                         </div>
 
                         <div>
-                            <button>Calculate total</button>
+                            <button id="calculate-total">Calculate total</button>
                         </div>
 
                         <div>
@@ -287,7 +287,7 @@
                                 Total
                             </div>
 
-                            <div> $ <span>Total</span></div>
+                            <div> $ <span id="final-cost">Total</span></div>
                         </div>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <!-- javascript file link added here  -->
-    <script src="/index.js"></script>
+    <script src="/"></script>
 </body>
 
 </html>
