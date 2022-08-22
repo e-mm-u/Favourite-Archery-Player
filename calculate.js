@@ -28,7 +28,9 @@ document.getElementById('calculate').addEventListener('click',function(){
 })
 
 document.getElementById('calculate-total').addEventListener('click', function(){
+
     // const totalPerPlayerCost = parseFloat(document.getElementById('playerExpensetotal').innerText);
+    
     const perPersonCost = value('perPlayerCost');
     const n = coundChild('top-five');
     const totalPerPlayerCost = n * perPersonCost;
