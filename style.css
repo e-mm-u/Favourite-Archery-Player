@@ -52,10 +52,21 @@
     background-color: rgba(255, 255, 0, 0.8);
     border-radius: 50%;
 }
-
+/* .h1back{
+    background-color: black;
+    opacity: 10%;
+    z-index: 0;
+} */
 .banner-txt{
     color: rgba(255, 255, 255, 1.0);
     font-weight: 900;
+}
+
+#aside{
+    width: 25%;
+}
+#cards{
+    width: 75%;
 }
 
 .card{
@@ -82,7 +93,56 @@
 }
 
 .budget {
-    height: 400px;
+    height: auto;
     background-color: black;
-    border: 1pz solid white;
+}
+.budget-text{
+    color: yellow;
+    background: -webkit-linear-gradient(right,yellow,red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.budget button{
+    
+    color: black;
+}
+
+@media only screen and (max-width: 768px){
+    .white-circle{
+        height: 50vh;
+        width: 50vh;
+    }
+    .black-circle{
+        height: 40vh;
+        width: 40vh;
+    }
+    .blue-circle{
+        height: 30vh;
+        width: 30vh;
+    }
+    .red-circle{
+        height: 20vh;
+        width: 20vh;
+    }
+    .yellow-circle{
+        height: 10vh;
+        width: 10vh;
+    }
+
+    #aside{
+        width: 33%;
+    }
+    #cards{
+        width: 67%;
+    }
+    
+}
+
+@media only screen and (max-width: 576px){
+    #aside{
+        width: 50%;
+    }
+    #cards{
+        width: 50%;
+    }
 }
