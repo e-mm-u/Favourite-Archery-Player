@@ -67,6 +67,14 @@
     color: white;
 }
 
+.selected{
+    color: yellow;
+    background: -webkit-linear-gradient(right,yellow,red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 .selected-players{
     height: 200px;
     width: 100%;
