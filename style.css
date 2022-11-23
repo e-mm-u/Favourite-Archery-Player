@@ -70,7 +70,7 @@
 }
 
 .card{
-    border: none;
+    border: 1px solid darkorange !important;
     background-color: black !important;
 }
 
